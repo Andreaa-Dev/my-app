@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
@@ -11,6 +11,7 @@ import {
 } from "react-native";
 
 function LogInPage() {
+  const [inout, setInput] = useState("");
   return (
     <View>
       <Text>Welcome to ADN !</Text>
