@@ -11,17 +11,17 @@ import {
 } from "react-native";
 
 function LogInPage() {
-  const [inout, setInput] = useState("");
+  const [input, setInput] = useState("");
   return (
-    <View>
-      <Text>Welcome to ADN !</Text>
+    <SafeAreaView>
+      <Text>Welcome to Loreal !</Text>
       <Text> Log in</Text>
       <StatusBar style="auto" />
-      <TextInput> Email/ User Name</TextInput>
-      <TextInput> Password</TextInput>
+      <TextInput onChangeText={setInput} value={input}>
+        Email/ User Name
+      </TextInput>
       <Button title="Log In"> </Button>
-      <Image source={require("../../assets/mainPage.jpeg")}></Image>
-    </View>
+    </SafeAreaView>
   );
 }
 
